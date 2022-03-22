@@ -3,11 +3,10 @@ import {createStitches, createTheme } from "@stitches/react"
 export const {styled, css} = createStitches({
   theme: {
     colors: {
-      gray500: 'hsl(206,10%,76%)',
-      blue500: 'hsl(206,100%,50%)',
-      purple500: 'hsl(252,78%,60%)',
-      green500: 'hsl(148,60%,60%)',
-      red500: 'hsl(352,100%,62%)',
+      color: '#FAEEE7',
+      color01: '#24A19C',
+      color02: '#D96098',
+      color03: '#142D4C',
     },
     space: {
       1: '5px',
@@ -38,10 +37,9 @@ export const {styled, css} = createStitches({
 
 export const darkTheme = createTheme({
   colors: {
-    gray500: '#000',
-    blue500: 'hsl(206,100%,50%)',
-    purple500: 'hsl(252,78%,60%)',
-    green500: 'hsl(148,60%,60%)',
-    red500: 'hsl(352,100%,62%)',
+    color: '#142D4C',
+    color01: "#FAEEE7",
+    color02: '#24A19C',
+    color03: '#D96098',
   },
 })

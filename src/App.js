@@ -1,22 +1,8 @@
 import React from "react";
-import { darkTheme, styled } from "./stitches.config.js"
- const Container = styled("div",{
-    width: "100%",
-    height: "100vh",
-
-  variants: {
-    variant: {
-      bg: {
-        backgroundColor: "$gray500",
-        color: "#fff"
-      }
-    }
-  }
-  })
+import Home from "../src/Pages/Home/index.js"
 const App = () => {
- 
   return (
-    <Container variant = {"bg"}>Hallo Word!!</Container>
+    <Home />
   );
 }
 export default App;
