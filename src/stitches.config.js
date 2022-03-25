@@ -3,10 +3,12 @@ import {createStitches, createTheme } from "@stitches/react"
 export const {styled, css} = createStitches({
   theme: {
     colors: {
-      color: '#FAEEE7',
+      color: 'rgb(255,229,229)',
+      bg: "linear-gradient(120deg, rgba(255,229,229,1) 0%, rgba(247,247,247,1) 45%, rgba(254,255,255,1) 100%);",
       color01: '#24A19C',
       color02: '#D96098',
       color03: '#142D4C',
+      color04: '#d9609861',
     },
     media: {
       bp1: '(min-width: 640px)',
@@ -17,6 +19,14 @@ export const {styled, css} = createStitches({
       1: '5px',
       2: '10px',
       3: '15px',
+      4: "21px",
+      5: "25px",
+      6: "30px",
+      7: "36px",
+      8: "43px",
+      9: "52px",
+      10: "62px"
+
     },
     fontSizes: {
       "0": 0,
@@ -63,7 +73,7 @@ export const {styled, css} = createStitches({
   sizes: {
     "0": 0,
     "1": "480px",
-    "2": "768px",
+    "2": "960px",
     "3": "1024px",
     "4": " 1200px",
     "5": "1600px"
@@ -106,9 +116,12 @@ export const {styled, css} = createStitches({
 export const darkTheme = createTheme({
   colors: {
     color: '#18181b',
+    bg: 'linear-gradient(120deg, rgba(216,82,142,1) -450%, rgba(24,24,27,1) 45%, rgba(24,24,27,1) 100%); /* FF3.6-15 */',
+    
     color01: "#FAEEE7",
     color02: '#24A19C',
     color03: '#D96098',
+    color04: '#24a19d5d',
   },
 })
 
