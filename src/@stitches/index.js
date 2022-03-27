@@ -16,6 +16,6 @@ export const {
   ...stitchesConfig,
 })
 
-export const darkThemeColor = createTheme({
+export const darkColor = createTheme({
   ...darkTheme
 });

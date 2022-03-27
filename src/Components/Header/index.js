@@ -1,11 +1,9 @@
 import React from 'react';
 
 // component of styles
-import Header from 'Design/Containers/Header'
 import {motion} from 'framer-motion'
-
-import {Abbr, Text, Nav, Menu, List, Links} from 'Design'
-
+import {Abbr, Text, Nav, Menu, List, Links, Header} from 'Design'
+import { ToggleTheme } from 'Components/ToggleTheme/index';
 // icons
 
 const MyHeader = () => {
@@ -22,11 +20,20 @@ const MyHeader = () => {
           </Text>
         </motion.div>
 
-        <Menu>
+        <Menu variant="menuHeader">
           <List>
-            <Links variant="linksMenu">test</Links>
+            <Links variant="linksMenu">Home</Links>
+          </List>
+
+          <List>
+            <Links variant="linksMenu">Projects</Links>
+          </List>
+
+          <List>
+            <Links variant="linksMenu">Contact</Links>
           </List>
         </Menu>
+        <ToggleTheme />
       </Nav>
     </Header>
   )

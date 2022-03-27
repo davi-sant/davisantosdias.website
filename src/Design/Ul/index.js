@@ -2,9 +2,10 @@ import { styled } from "@stitches";
 
 export const Menu = styled("ul", {
   variants: {
-    varaiant: {
+    variant: {
       menuHeader: {
-        border: "1px solid red",
+        display: "flex",
+        alignItem: "center",
       }
     }
   }

@@ -1,4 +1,4 @@
-import {styled } from '@stitches'
+import { styled } from '@stitches'
 
 export const Header = styled('header',{
   width: '100%',

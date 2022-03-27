@@ -1,8 +1,23 @@
+import { styled } from "@stitches";
 
-import {styled } from "@stitches";
+export const Button = styled("button", {
+  cursor: "pointer",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 
-export const Button = styled("Button", {
-  border: "none",
-  color: "blue",
-  position: "absolute",
-})
+  variants: {
+    variant: {
+      toggleButton: {
+        width: "30px",
+        height: "30px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: "5px",
+        border: "none",
+        background: "$color03",
+      },
+    },
+  },
+});

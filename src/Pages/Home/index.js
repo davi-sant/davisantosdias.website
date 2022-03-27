@@ -1,9 +1,8 @@
 import React from "react";
 
 // components of design
-import Container from "../../Design/Containers/Container";
-// import { darkTheme } from "../../stitches.config";
-import MyHeader from '../../Components/Header/index.js'
+import { Container } from "Design";
+import MyHeader from 'Components/Header'
 
 const Home = () => {
 

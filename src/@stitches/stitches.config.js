@@ -18,8 +18,7 @@ const stitchesConfig = {
       full: "100%",
       screenHeight: "100vh",
     },
-
-   },
+  },
   fontFamily: {
     DM: `DM Sans, sans-serif`,
     IBM: `IBM Plex Mono, monospace`,

@@ -1,8 +1,7 @@
 import Home from "Pages/Home"
-import {globalstyles} from 'Design';
-import {Container} from "Design";
+import {GlobalStyles, Container} from 'Design';
 const App = () => {
-  globalstyles()
+  GlobalStyles()
   return (
       <Container >
         <Home />
