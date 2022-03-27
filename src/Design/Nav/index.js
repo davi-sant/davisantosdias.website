@@ -1,12 +1,14 @@
-import { styled } from "../../stitches.config";
+import { styled } from "@stitches";
 
-const Nav = styled("nav", {
+export const Nav = styled("nav", {
+  width: "100%",
+  maxWidth: "$1",
 
   variants: {
     variant: {
       navHeader: {
         width: "100%",
-        maxWidth: "$2",
+        maxWidth: "$4xl",
         height: "100%",
         margin: "0 auto",
         display: "flex",
@@ -14,7 +16,6 @@ const Nav = styled("nav", {
         justifyContent: "space-between",
       }
     }
-  } 
+  }
 
 })
-export default Nav

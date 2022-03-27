@@ -1,6 +1,5 @@
-import {styled} from '../../stitches.config';
+import {styled} from '@stitches';
 
-const Abbr = styled("abbr", {
+export const Abbr = styled("abbr", {
   textDecoration: "none",
 })
-export default Abbr

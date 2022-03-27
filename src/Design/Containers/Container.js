@@ -1,6 +1,6 @@
-import { styled } from "../../stitches.config.js";
+import { styled } from "@stitches";
 
-const Container = styled("div", {
+export const Container = styled("div", {
   backgroundColor: "$color",
   background: "$bg",
   width: "100%",
@@ -12,4 +12,3 @@ const Container = styled("div", {
     }
   }
 })
-export default Container;

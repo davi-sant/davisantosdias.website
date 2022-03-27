@@ -1,6 +1,6 @@
-import { styled } from '../../stitches.config';
+import { styled } from '@stitches';
 
-const Text = styled("p", {
+export const Text = styled("p", {
   fontFamily: "$DM",
 
 
@@ -13,4 +13,3 @@ const Text = styled("p", {
     }
   }
 })
-export default Text

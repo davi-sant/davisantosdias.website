@@ -1,7 +1,7 @@
-import { styled } from "../../stitches.config";
+import { styled } from "@stitches";
 
-const I = styled('i', {
-  
+export const I = styled('i', {
+
   variants: {
     variant: {
       iconCaffe: {
@@ -11,4 +11,3 @@ const I = styled('i', {
     }
   }
 })
-export default I;

@@ -1,35 +1,34 @@
 import React from 'react';
 
 // component of styles
-import Header from '../../Design/Containers/Header'
+import Header from 'Design/Containers/Header'
 import {motion} from 'framer-motion'
-import Abbr from '../../Design/Abbr'
-import Text from '../../Design/Paragraph'
-import I from '../../Design/Icons'
-import Nav from "../../Design/Nav"
+
+import {Abbr, Text, Nav, Menu, List, Links} from 'Design'
+
 // icons
-import { BiCoffee } from "react-icons/bi"
 
 const MyHeader = () => {
   return (
     <Header>
       <Nav variant="navHeader">
-        <motion.div 
-          animate={{rotate: 360}} 
+        <motion.div
+          animate={{rotate: 360}}
           transition={{duration: 2}}>
           <Text variant="textHeader">
-            Front-End Jr 
-            <Abbr title="React">
-              <I variant="iconCaffe">
-                <BiCoffee fontSize={12}/>
-              </I>
-            </Abbr> 
-            Davi
+            <Abbr title="Logo">
+              ⚡
+            </Abbr>
           </Text>
         </motion.div>
 
+        <Menu>
+          <List>
+            <Links variant="linksMenu">test</Links>
+          </List>
+        </Menu>
       </Nav>
     </Header>
   )
 }
-export default MyHeader; 
+export default MyHeader;
