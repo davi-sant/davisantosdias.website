@@ -1,4 +1,4 @@
-import { styled } from "@stitches";
+import { styled } from "../../stitches.config";
 
 export const Nav = styled("nav", {
   width: "100%",

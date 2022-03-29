@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 import { Button } from "Design";
-import { darkColor } from "@stitches";
+import { darkColor } from "../../stitches.config";
 
 export const ToggleTheme = () => {
   const [themeState, setThemeState] = useState(false);

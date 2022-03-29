@@ -1,12 +1,12 @@
-import { styled } from "@stitches";
+import { styled } from "../../stitches.config";
 
 export const List = styled("li", {
   listStyle: "none",
-  padding: "0 15px",
   variants: {
     variant: {
       listMenu: {
-
+        height: "$full",
+        mx: "20px"
       }
     }
   }
