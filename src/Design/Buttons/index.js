@@ -11,12 +11,9 @@ export const Button = styled("button", {
       toggleButton: {
         width: "30px",
         height: "30px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         borderRadius: "5px",
         border: "none",
-        background: "$color03",
+        background: "$color02",
       },
     },
   },

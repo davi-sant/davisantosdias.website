@@ -8,7 +8,8 @@ export const Text = styled("p", {
     variant: {
       textHeader: {
         fontFamily: "$IBM",
-        fontSize: "$1",
+        fontSize: "$sm",
+        color: "$color"
       }
     }
   }

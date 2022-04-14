@@ -4,7 +4,9 @@ export const Container = styled("div", {
   backgroundColor: "$color",
   background: "$bg",
   width: "100%",
-  height: "100vh",
+  height: "200vh",
+  display: "flex",
+  flexWrap: "wrap",
 
 
   variants: {

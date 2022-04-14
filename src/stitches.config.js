@@ -1,7 +1,6 @@
-import { createStitches } from "@stitches/react"
-import darkTheme from "./@stitches/darkTheme.js"
-import lightTheme from "./@stitches/lightTheme.js"
-
+import { createStitches } from "@stitches/react";
+import darkTheme from "./@stitches/darkTheme.js";
+import lightTheme from "./@stitches/lightTheme.js";
 
 export const {
   styled,
@@ -11,9 +10,16 @@ export const {
   keyframes,
   getCssText,
   createTheme,
-  config
+  config,
 } = createStitches({
-   theme: {
+  media: {
+    sm: "(max-width: 640px)",
+    md: "(max-width: 768px)",
+    lg: "(max-width: 1024px)",
+    xl: "(max-width: 1280px)",
+    "2xl": "(max-width: 1536px)",
+  },
+  theme: {
     ...lightTheme,
     sizes: {
       none: "none",
@@ -106,14 +112,7 @@ export const {
       4: "4px",
       8: "8px",
     },
-    media: {
-      sm: "(max-width: 640px)",
-      md: "(max-width: 768px)",
-      lg: "(max-width: 1024px)",
-      xl: "(max-width: 1280px)",
-      "2xl": "(max-width: 1536px)",
-      motionOK: "(prefers-reduced-motion: no-preference)",
-    },
+
     utils: {
       mt: (value) => ({ marginTop: value }),
       mr: (value) => ({ marginRight: value }),
@@ -145,8 +144,8 @@ export const {
       }),
     },
   },
-})
+});
 
 export const darkColor = createTheme({
-  ...darkTheme
+  ...darkTheme,
 });

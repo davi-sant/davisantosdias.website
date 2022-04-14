@@ -1,5 +1,5 @@
-import Home from "Pages/Home"
-import {GlobalStyles, Container} from 'Design';
+import Home from "../src/Pages/Home"
+import {GlobalStyles, Container} from '../src/Design';
 const App = () => {
   GlobalStyles()
   return (

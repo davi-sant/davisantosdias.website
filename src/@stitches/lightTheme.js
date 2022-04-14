@@ -1,12 +1,12 @@
 
 const lightTheme = {
   colors: {
-    color: 'rgb(255,229,229)',
-    bg: "linear-gradient(120deg, rgba(255,229,229,1) 0%, rgba(247,247,247,1) 45%, rgba(254,255,255,1) 100%);",
-    color01: '#142D4C', 
-    color02: '#D96098',
-    color03: '#24A19C',
-    color04: '#d9609861',
+    color: "#010101",
+    bg: '#fef6e4',
+    color01: '#001858',
+    color02: '#f582ae',
+    color03: '#8bd3dd',
+    color04: '#f3d2c1',
   },
 
 }

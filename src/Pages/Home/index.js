@@ -1,8 +1,8 @@
 import React from "react";
 
 // components of design
-import { Container } from "Design";
-import MyHeader from 'Components/Header'
+import { Container } from "../../Design";
+import MyHeader from '../../Components/Header'
 
 const Home = () => {
 

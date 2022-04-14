@@ -12,7 +12,7 @@ export const Links = styled("a", {
 
         height: "30px",
         textDecoration: "none",
-        color: "$color03",
+        color: "$color",
         fontSize: "$sm",
 
         padding: "0 10px",

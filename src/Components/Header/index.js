@@ -2,14 +2,14 @@ import React from "react";
 
 // component of styles
 import { motion } from "framer-motion";
-import { Abbr, Text, Nav, Menu, List, Links, Header } from "Design";
-import { ToggleTheme } from "Components/ToggleTheme";
+import { Abbr, Text, Nav, Menu, List, Links, Header } from "../../Design";
+import { ToggleTheme } from "../ToggleTheme";
 // icons
-
+import { SiFoodpanda } from "react-icons/si";
 const MyHeader = () => {
   const getLinks = [
     {
-      name: "_Sobre",
+      name: "_about",
       Links: "#",
     },
 
@@ -19,23 +19,26 @@ const MyHeader = () => {
     },
   ];
   return (
-    <Header>
+    <Header
+      variant={{
+        "@initial": "header",
+        "@sm": "headerMobile",
+      }}
+    >
       <Nav variant="navHeader">
         <motion.div animate={{ rotate: 360 }} transition={{ duration: 2 }}>
-          <Text variant="textHeader">
-            <Abbr title="Logo">⚡</Abbr>
-          </Text>
+          <Abbr title="Logo panda">
+            <Text variant="textHeader">
+              <SiFoodpanda fontSize={22} />
+            </Text>
+          </Abbr>
         </motion.div>
 
         <Menu variant="menuHeader">
           {getLinks.map((getLink, index) => {
             return (
               <List variant="listMenu" key={index}>
-                <Links
-                  variant="linksMenu"
-                  href={getLink.Links}
-                  target={getLink.target}
-                >
+                <Links variant="linksMenu" href={getLink.Links}>
                   {getLink.name}
                 </Links>
               </List>
