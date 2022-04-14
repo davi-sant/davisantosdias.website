@@ -1,116 +1,151 @@
-import {createStitches, createTheme } from "@stitches/react"
+import { createStitches } from "@stitches/react";
+import darkTheme from "./@stitches/darkTheme.js";
+import lightTheme from "./@stitches/lightTheme.js";
 
-export const {styled, css} = createStitches({
+export const {
+  styled,
+  theme,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  createTheme,
+  config,
+} = createStitches({
+  media: {
+    sm: "(max-width: 640px)",
+    md: "(max-width: 768px)",
+    lg: "(max-width: 1024px)",
+    xl: "(max-width: 1280px)",
+    "2xl": "(max-width: 1536px)",
+  },
   theme: {
-    colors: {
-      color: '#FAEEE7',
-      color01: '#24A19C',
-      color02: '#D96098',
-      color03: '#142D4C',
-    },
-    media: {
-      bp1: '(min-width: 640px)',
-      bp2: '(min-width: 768px)',
-      bp3: '(min-width: 1024px)',
-    },
-    space: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-    },
-    fontSizes: {
-      "0": 0,
-      "1": "12px",
-      "2": "15px",
-      "3": "18px",
-      "4": "21px",
-      "5": "25px",
-      "6": "30px",
-      "7": "36px",
-      "8": "43px",
-      "9": "52px",
-      "10": "62px"
+    ...lightTheme,
+    sizes: {
+      none: "none",
+      "01": "10px",
+      "02": "20px",
+      "03": "30px",
+      "04": "40px",
+      "05": "50px",
+      "06": "60px",
+      xs: "20rem", //320px
+      sm: "24rem", //384px
+      md: "28rem", //448px
+      lg: "32rem", //512px
+      xl: "36rem", //576px
+      "2xl": "42rem", //672px
+      "3xl": "48rem", //768px
+      "4xl": "56rem", //896px
+      "5xl": "64rem", //1024px
+      "6xl": "72rem", //1152px
+      full: "100%",
+      screenHeight: "100vh",
     },
     fontFamily: {
-    DM: `DM Sans, sans-serif`,
-    IBM: `IBM Plex Mono, monospace`, 
-  },
-  fontWeights: {
-    "1": "100",
-    "2": "200",
-    "3": "300",
-    "4": "400",
-    "5": "500",
-    "6": "600",
-    "7": "700",
-    "8": "800",
-    "9": "900"
-  },
-  lineHeighsts: {
-    "0": 0,
-    "1": "12px",
-    "2": "15px",
-    "3": "18px",
-    "4": "21px",
-    "5": "25px",
-    "6": "30px",
-    "7": "36px",
-    "8": "43px",
-    "9": "52px",
-    "10": "62px"
-  },
-  letterSpacings: {},
-  sizes: {
-    "0": 0,
-    "1": "480px",
-    "2": "768px",
-    "3": "1024px",
-    "4": " 1200px",
-    "5": "1600px"
-  },
-  borderWidths: {
-    "0": 0,
-    "1": "1px",
-    "2": "2px",
-    "3": "3px",
-    "4": "4px"
-  },
-  borderStyles: {},
-  radii: {
-    "0": 0,
-    "1": "2px",
-    "2": "4px",
-    "3": "8px",
-    "4": "2em",
-    "round": "50%",
-    "pill": "9999px"
-  },
-  shadows: {
-    "1": "rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;",
-    "2": "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;",
-    "3": "rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;",
-    "4": "rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;"
-  },
-  zIndices: {
-    "0": 0,
-    "1": "100",
-    "2": "200",
-    "3": "300",
-    "4": "400",
-    "max": "999"
-  },
-  transitions: {},
-}, 
-})
+      DM: `DM Sans, sans-serif`,
+      IBM: `IBM Plex Mono, monospace`,
+    },
+    fontSizes: {
+      xs: "0.75rem", //12px
+      sm: "0.875rem", //14px
+      base: "1rem", //16px
+      lg: "1.125rem", //18px
+      xl: "1.25rem", //20px
+      "2xl": "1.5rem", //24px
+      "3xl": "1.875rem", //30px
+      "4xl": "2.25rem", //36px
+      "5xl": "3rem", //48px
+      "6xl": "4rem", //64px
+    },
+    fontWeights: {
+      thin: 100,
+      extralight: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      black: 900,
+    },
+    lineHeights: {
+      none: 1,
+      tight: 1.25,
+      snug: 1.375,
+      normal: 1.5,
+      relaxed: 1.625,
+      loose: 2,
+    },
+    letterSpacings: {
+      tighter: "-0.05em",
+      tight: "-0.025em",
+      normal: "0em",
+      wide: "0.025em",
+      wider: "0.05em",
+      widest: "0.1em",
+    },
+    radii: {
+      none: "0",
+      sm: "0.125rem",
+      default: "0.25rem",
+      md: "0.375rem",
+      lg: "0.5rem",
+      xl: "0.75rem",
+      "2xl": "1rem",
+      "3xl": "1.5rem",
+      full: "9999px",
+    },
+    zIndices: {
+      auto: "auto",
+      0: "0",
+      10: "10",
+      20: "20",
+      30: "30",
+      40: "40",
+      50: "50",
+    },
+    borderWidths: {
+      default: "1px",
+      0: "0",
+      2: "2px",
+      4: "4px",
+      8: "8px",
+    },
 
-export const darkTheme = createTheme({
-  colors: {
-    color: '#18181b',
-    color01: "#FAEEE7",
-    color02: '#24A19C',
-    color03: '#D96098',
+    utils: {
+      mt: (value) => ({ marginTop: value }),
+      mr: (value) => ({ marginRight: value }),
+      mb: (value) => ({ marginBottom: value }),
+      ml: (value) => ({ marginLeft: value }),
+
+      mx: (value) => ({
+        marginLeft: value,
+        marginRight: value,
+      }),
+      my: (value) => ({
+        marginTop: value,
+        marginBottom: value,
+      }),
+
+      // Abbreviated padding properties
+      pt: (value) => ({ paddingTop: value }),
+      pr: (value) => ({ paddingRight: value }),
+      pb: (value) => ({ paddingBottom: value }),
+      pl: (value) => ({ paddingLeft: value }),
+
+      px: (value) => ({
+        paddingLeft: value,
+        paddingRight: value,
+      }),
+      py: (value) => ({
+        paddingTop: value,
+        paddingBottom: value,
+      }),
+    },
   },
-})
+});
 
-
-
+export const darkColor = createTheme({
+  ...darkTheme,
+});

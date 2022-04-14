@@ -1,9 +1,13 @@
-import { styled } from "../../stitches.config.js";
+import { styled } from "../../stitches.config";
 
-const Container = styled("div", {
+export const Container = styled("div", {
   backgroundColor: "$color",
+  background: "$bg",
   width: "100%",
-  height: "100vh",
+  height: "200vh",
+  display: "flex",
+  flexWrap: "wrap",
+
 
   variants: {
     variant: {
@@ -11,4 +15,3 @@ const Container = styled("div", {
     }
   }
 })
-export default Container;

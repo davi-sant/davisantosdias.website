@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 // components of design
-import Container from "../../Design/Containers/Container";
-import { darkTheme } from "../../stitches.config";
-
+import { Container } from "../../Design";
+import MyHeader from '../../Components/Header'
 
 const Home = () => {
-  const [activeTheme, setActiveTheme] = useState(false);
-  const toggleTheme = () => {
-    setActiveTheme(!activeTheme);
-  }
+
   return (
-    <Container className={activeTheme ? darkTheme : ""}>
-      <button onClick={toggleTheme}>alterar thema</button>
+    <Container>
+      <MyHeader />
     </Container>
   );
 }

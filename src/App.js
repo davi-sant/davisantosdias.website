@@ -1,10 +1,11 @@
-import React from "react";
-import Home from "../src/Pages/Home/index.js"
-import globalstyles from '../src/Design/ResetCss/Global.js';
+import Home from "../src/Pages/Home"
+import {GlobalStyles, Container} from '../src/Design';
 const App = () => {
-  globalstyles()
+  GlobalStyles()
   return (
-    <Home />
+      <Container >
+        <Home />
+      </Container>
   );
 }
 export default App;
