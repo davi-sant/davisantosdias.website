@@ -14,7 +14,7 @@ const MyHeader = () => {
     },
 
     {
-      name: "_Projetos",
+      name: "_Projects",
       Links: "#",
     },
   ];
@@ -22,7 +22,7 @@ const MyHeader = () => {
     <Header
       variant={{
         "@initial": "header",
-        "@sm": "headerMobile",
+        "@lg": "headerMobile",
       }}
     >
       <Nav variant="navHeader">
