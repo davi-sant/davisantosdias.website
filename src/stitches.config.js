@@ -20,7 +20,7 @@ export const {
     "2xl": "(max-width: 1536px)",
   },
   theme: {
-    ...lightTheme, 
+    ...lightTheme,
     sizes: {
       none: "none",
       "01": "10px",
@@ -29,6 +29,17 @@ export const {
       "04": "40px",
       "05": "50px",
       "06": "60px",
+      "07": "70px",
+      "08": "80px",
+      "09": "90px",
+      "10": "100px",
+      "11": "110px",
+      "12": "120px",
+      "13": "130px",
+      "14": "140px",
+      "15": "150px",
+      "16": "160px",
+      "17": "170px",
       xs: "20rem", //320px
       sm: "24rem", //384px
       md: "28rem", //448px

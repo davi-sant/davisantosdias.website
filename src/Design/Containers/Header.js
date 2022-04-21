@@ -13,7 +13,10 @@ export const Header = styled("header", {
         color: "$color02",
         position: "sticky",
         top: "0",
-        backdropFilter: "blur(10px)",
+        background: "$bgHeader",
+
+        backdropFilter: "blur( 11px)",
+        webkitBackdropFilter: "blur( 11px)",
       },
       headerMobile: { alignItems: "center" },
     },
