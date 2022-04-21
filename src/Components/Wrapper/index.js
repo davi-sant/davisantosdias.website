@@ -1,5 +1,9 @@
 import { Container } from "../../Design";
 import { Figure } from "../../Design/Figure";
+import { Image } from "../../Design/Img";
+
+//image
+// import imgProfile from "../../img/imgProfile.png";
 
 export const MyWrapper = () => {
   return (
@@ -15,7 +19,14 @@ export const MyWrapper = () => {
           "@sm": "responsiveStyles",
         }}
       >
-        <div>image</div>
+        <Container
+          containerImageWrapper={{
+            "@initial": "defaultStyles",
+            "@sm": "mobileStyles",
+          }}
+        >
+          <Image src="https://avatars.githubusercontent.com/u/97963191?v=4" alt="image profile" />
+        </Container>
       </Figure>
       <article>
         <div>

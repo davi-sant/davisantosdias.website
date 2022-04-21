@@ -22,5 +22,21 @@ export const Container = styled("div", {
         padding: "20px 20px",
       },
     },
+    containerImageWrapper: {
+      defaultStyles: {
+        borderColor: "$color02",
+        padding: "5px",
+        borderRadius: "$full",
+        width: "$full",
+        maxWidth: "$17",
+        height: "$17",
+        // backgroundColor: "$color02",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        border: "1px solid #c3c3c3",
+      },
+      mobileStyles: {},
+    }
   },
 });
